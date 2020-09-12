@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./index.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <title></title>
+  </head>
+  <body>
+    <div class="menu-toggle">Menu</div>
+    <ul class="active">
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-home"></i>
+          </div>
+          <div class="name"><span data-text="Home">Home</span></div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fas fa-users"></i>
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="name"><span data-text="About">About</span></div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="name"><span data-text="Statistics">Statistics</span></div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <div class="icon">
+            <i class="fas fa-users-cog"></i>
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <div class="name"><span data-text="Settings">Settings</span></div>
+        </a>
+      </li>
+    </ul>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".menu-toggle").click(function() {
+          $("ul").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
